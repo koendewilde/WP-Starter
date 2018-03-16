@@ -1,0 +1,48 @@
+.row-cta-small {
+    padding-top: 20px;
+    margin-bottom: 60px;
+}
+
+.cta-small-wrapper {
+    max-width: 420px;
+    margin: 0 auto;
+}
+
+.cta-small-wrapper h2 {
+    font-weight: 300;
+    font-size: 20px;
+    margin: 0 0 32px;
+}
+
+.cta-small-wrapper p {
+    margin: 0 0 20px;
+}
+
+.cta-small-wrapper ul.cta-small-list {
+    margin: 0 0 20px;
+}
+
+.cta-small-wrapper ul li {
+    font-size: 14px;
+    color: $color-green;
+    position: relative;
+    padding-left: 15px;
+    margin-bottom: 8px;
+}
+
+.cta-small-wrapper ul li:before {
+    content: '+';
+    position: absolute;
+    left: 0;
+    top: -1px;
+}
+
+@media only screen and (min-width: 480px) {
+    .cta-small-wrapper ul.cta-small-list {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .cta-small-wrapper ul li {
+        flex-basis: 50%;
+    }
+}

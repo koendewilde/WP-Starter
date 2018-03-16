@@ -1,0 +1,226 @@
+.custom-dropdown select {
+    display: none;
+}
+
+.nice-select {
+    -webkit-tap-highlight-color: transparent;
+    background-color: #fff;
+    border-radius: 5px;
+    box-sizing: border-box;
+    clear: both;
+    color: $color-green;
+    border: 1px solid $color-green;
+    cursor: pointer;
+    display: block;
+    float: left;
+    font-family: inherit;
+    font-size: 14px;
+    font-weight: normal;
+    height: 52px;
+    line-height: 50px;
+    outline: none;
+    padding-left: 23px;
+    padding-right: 35px;
+    position: relative;
+    text-align: left !important;
+    transition: all 0.2s ease-in-out;
+    user-select: none;
+    white-space: nowrap;
+    width: auto;
+}
+
+.nice-select>span.current {
+    display: inline-block;
+    width: 100%;
+    max-width: 160px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+// blog filter
+.nice-select.blog-filter>span.current {
+    max-width: 200px;
+}
+
+.nice-select.blog-filter>span.current:before {
+    content: 'Sorteren op ';
+    color: $color-grey;
+}
+
+.nice-select:hover>span.current,
+.nice-select.open>span.current {}
+
+.nice-select:after {
+    border-bottom: 1px solid $color-green;
+    border-right: 1px solid $color-green;
+    content: '';
+    display: block;
+    height: 6px;
+    width: 6px;
+    pointer-events: none;
+    position: absolute;
+    top: 21px;
+    right: 14px;
+    transform: rotate(45deg);
+    transform-origin: center;
+    transition: all 0.15s ease-in-out;
+}
+
+.nice-select.open:after {
+    transform: rotate(-135deg);
+    top: 24px;
+}
+
+.nice-select.open .list {
+    opacity: 1;
+    pointer-events: auto;
+    -webkit-transform: scale(1) translateY(0);
+    -ms-transform: scale(1) translateY(0);
+    transform: scale(1) translateY(0);
+}
+
+.nice-select.disabled {
+    border-color: #ededed;
+    color: #999;
+    pointer-events: none;
+}
+
+.nice-select.disabled:after {
+    border-color: #cccccc;
+}
+
+.nice-select .list {
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 0 1px rgba(68, 68, 68, 0.11);
+    box-sizing: border-box;
+    margin-top: 4px;
+    opacity: 0;
+    overflow: hidden;
+    padding: 0;
+    pointer-events: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    -webkit-transform-origin: 50% 0;
+    -ms-transform-origin: 50% 0;
+    transform-origin: 50% 0;
+    -webkit-transform: scale(0.75) translateY(-21px);
+    -ms-transform: scale(0.75) translateY(-21px);
+    transform: scale(0.75) translateY(-21px);
+    -webkit-transition: all 0.2s cubic-bezier(0.5, 0, 0, 1.25), opacity 0.15s ease-out;
+    transition: all 0.2s cubic-bezier(0.5, 0, 0, 1.25), opacity 0.15s ease-out;
+    z-index: 7;
+    max-height: 40vh;
+    overflow: auto;
+    min-width: 100%;
+}
+
+.nice-select .list:hover .option:not(:hover) {
+    background-color: transparent !important;
+}
+
+.nice-select .option {
+    cursor: pointer;
+    font-weight: 400;
+    line-height: 40px;
+    list-style: none;
+    min-height: 40px;
+    outline: none;
+    color: $color-black;
+    opacity: 0.65;
+    padding-left: 23px;
+    padding-right: 35px;
+    text-align: left;
+    -webkit-transition: all 0.2s;
+    transition: all 0.2s;
+}
+
+.nice-select.linked .option {
+    padding: 0;
+}
+
+.nice-select.linked .option span,
+.nice-select.linked .option a {
+    min-height: 40px;
+    display: block;
+    padding-left: 23px;
+    padding-right: 35px;
+}
+
+.nice-select .option:hover,
+.nice-select .option.focus,
+.nice-select .option.selected.focus,
+.nice-select .option:hover a,
+.nice-select .option:hover span {
+    color: $color-black;
+    opacity: 1;
+}
+
+.has-mouse .nice-select .option,
+.has-mouse .nice-select .option a,
+.has-mouse .nice-select .option span,
+{
+    transition: opacity .3s ease-in-out;
+}
+
+.nice-select .option.selected {
+    color: $color-green;
+}
+
+.nice-select .option.disabled {
+    background-color: transparent;
+    color: #999;
+    cursor: default;
+}
+
+.no-csspointerevents .nice-select .list {
+    display: none;
+}
+
+.no-csspointerevents .nice-select.open .list {
+    display: block;
+}
+
+
+/* Dropdown leftside */
+
+.dropdown-left .nice-select .list {
+    right: 0;
+    left: auto;
+}
+
+
+/* Gravity custom-dropdown */
+
+.gform_wrapper form .custom-dropdown select {
+    opacity: 0;
+    position: absolute;
+}
+
+.gform_wrapper .nice-select {
+    font-size: 14px;
+    height: 44px;
+    line-height: 44px;
+    border-radius: 8px;
+    float: none;
+    background: $color-green-bg-light;
+}
+
+.gform_wrapper .nice-select:after {
+    top: 18px;
+    right: 18px;
+}
+
+.gform_wrapper .nice-select.open:after {
+    top: 21px;
+}
+
+.gform_wrapper .nice-select>span.current {
+    max-width: none;
+}
+
+.gform_wrapper .nice-select .option.selected.gf_placeholder {
+    display: none;
+}

@@ -1,0 +1,126 @@
+// Type
+body {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    color: $color-black;
+    line-height: 1.6;
+}
+
+.sans-serif {
+    font-family: 'Roboto', sans-serif;
+}
+
+.serif {
+    font-family: 'Lora', serif;
+}
+
+b,
+strong {
+    font-weight: 600;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: 600;
+    line-height: 1.2;
+    margin: 0 0 20px;
+}
+
+.serif h1,
+.serif h2,
+.serif h3,
+.serif h4,
+.serif h5,
+.serif h6,
+h1.serif,
+h2.serif,
+h3.serif,
+h4.serif,
+h5.serif,
+h6.serif {
+    font-family: 'Lora', serif;
+    font-weight: 400;
+}
+
+h1 {
+    font-size: 28px;
+}
+
+h1.page-title,
+h2.page-title {
+    font-size: 30px;
+    font-weight: 600;
+    font-family: 'Roboto', sans-serif;
+}
+
+h2 {
+    font-size: 30px;
+}
+
+h3 {
+    font-size: 24px;
+}
+
+h4 {
+    font-size: 20px;
+}
+
+h5 {
+    font-size: 18px;
+}
+
+h6 {
+    font-size: 16px;
+}
+
+// Titles
+h2.title--top {
+    font-size: 40px;
+    line-height: 1.4;
+    font-weight: 700;
+    color: $color-green;
+    margin-bottom: 8px;
+    min-height: 56px;
+}
+
+// home title = uppercase:
+h2.title--top.uppercase {
+    letter-spacing: 2px;
+    font-size: 36px;
+}
+
+// small top title
+h2.title--top.small {
+    font-size: 30px;
+}
+
+h1.title--main {
+    font-size: 42px;
+    line-height: 1.4;
+    font-weight: 400;
+    color: $color-black;
+    margin-bottom: 32px;
+}
+
+h2.title--v1 {
+    font-size: 25px;
+    font-weight: 400;
+    color: $color-green;
+    margin-bottom: 32px;
+}
+
+h2.title--v2 {
+    font-size: 21px;
+    font-weight: 400;
+    color: $color-green;
+    margin-bottom: 32px;
+}
+
+h2.title--v2.black {
+    color: $color-black;
+}

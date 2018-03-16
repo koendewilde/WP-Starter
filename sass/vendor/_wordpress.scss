@@ -1,0 +1,7 @@
+// offset mobile 46px but admin bar is not fixed
+// offset normal 32px; 
+@media screen and (min-width: 783px) {
+    .admin-bar #header-wrapper {
+        top: 32px;
+    }
+}

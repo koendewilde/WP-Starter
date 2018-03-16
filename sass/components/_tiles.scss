@@ -1,0 +1,41 @@
+.tiles-wrapper {
+    display: flex;
+    margin-left: -32px;
+    margin-right: -32px;
+}
+
+.post-tile {
+    width: calc(33.33% - 64px);
+    margin: 32px;
+    background: #fff;
+    border-radius: 0 0 4px 4px;
+}
+
+a.post-tile:hover {
+    color: $color-black;
+}
+
+.post-tile-bg {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.post-tile-bg span {
+    display: block;
+    padding-bottom: 60%;
+}
+
+.post-tile-content {
+    padding: 24px 16px 16px;
+}
+
+// hover bg img
+.has-mouse .post-tile {
+    transition: all .3s;
+}
+
+.has-mouse .post-tile:hover {
+    transform: scale(1.02);
+    box-shadow: $box-shadow;
+}

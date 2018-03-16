@@ -1,0 +1,255 @@
+{
+    "key": "group_5a980b6b005d0",
+    "title": "Pagina intro",
+    "fields": [
+        {
+            "key": "field_5a980c5a99e95",
+            "label": "Top Titel",
+            "name": "kdw_page_toptitle",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_5a980b7135bd4",
+            "label": "Titel (h1)",
+            "name": "kdw_page_title",
+            "type": "text",
+            "instructions": "optioneel, ipv standaard pagina titel",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_5aa938eef037e",
+            "label": "Extra intro opties",
+            "name": "kdw_page_intro_opties",
+            "type": "checkbox",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "buttons_title": "Button(s) onder titel",
+                "buttons_content": "Button(s) onder content",
+                "img": "Afbeelding",
+                "img_bottom": "Zet afbeelding onder content"
+            },
+            "allow_custom": 0,
+            "save_custom": 0,
+            "default_value": [],
+            "layout": "horizontal",
+            "toggle": 0,
+            "return_format": "value"
+        },
+        {
+            "key": "field_5aa9369e5761f",
+            "label": "Afbeelding",
+            "name": "kdw_page_intro_img",
+            "type": "image",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5aa938eef037e",
+                        "operator": "==",
+                        "value": "img"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "id",
+            "preview_size": "thumbnail",
+            "library": "all",
+            "min_width": "",
+            "min_height": "",
+            "min_size": "",
+            "max_width": "",
+            "max_height": "",
+            "max_size": "",
+            "mime_types": ""
+        },
+        {
+            "key": "field_5aaa71ab46d2e",
+            "label": "Options",
+            "name": "kdw_page_intro_img_options",
+            "type": "select",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5aa938eef037e",
+                        "operator": "==",
+                        "value": "img"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "bg1": "Full (achtergrond)",
+                "bg2": "Large (achtergrond)",
+                "large": "Large",
+                "medium": "Medium",
+                "small": "Small"
+            },
+            "default_value": [
+                "large"
+            ],
+            "allow_null": 0,
+            "multiple": 0,
+            "ui": 0,
+            "ajax": 0,
+            "return_format": "value",
+            "placeholder": ""
+        },
+        {
+            "key": "field_5aa9383757620",
+            "label": "Button 1",
+            "name": "kdw_page_intro_button1",
+            "type": "link",
+            "instructions": "Onder de titel",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5aa938eef037e",
+                        "operator": "==",
+                        "value": "buttons_title"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "array"
+        },
+        {
+            "key": "field_5aa9385f57621",
+            "label": "Button2",
+            "name": "kdw_page_intro_button2",
+            "type": "link",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5aa938eef037e",
+                        "operator": "==",
+                        "value": "buttons_title"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "array"
+        },
+        {
+            "key": "field_5aa93c62ca6f3",
+            "label": "Button 1",
+            "name": "kdw_page_content_button1",
+            "type": "link",
+            "instructions": "Onder de content",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5aa938eef037e",
+                        "operator": "==",
+                        "value": "buttons_content"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "array"
+        },
+        {
+            "key": "field_5aa93c86ca6f4",
+            "label": "Button 2",
+            "name": "kdw_page_content_button2",
+            "type": "link",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5aa938eef037e",
+                        "operator": "==",
+                        "value": "buttons_content"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "array"
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "page"
+            },
+            {
+                "param": "post_template",
+                "operator": "!=",
+                "value": "template-page-home.php"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "acf_after_title",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "field",
+    "hide_on_screen": "",
+    "active": 1,
+    "description": "",
+    "modified": 1521123187
+}

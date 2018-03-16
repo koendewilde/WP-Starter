@@ -1,0 +1,176 @@
+#footer {
+    border-top: 1px solid $color-border-grey;
+    position: relative;
+    font-size: 14px;
+    font-weight: 300;
+}
+
+
+/* footer main */
+
+#footer-main {
+    text-align: center;
+}
+
+#footer-main-left {
+    padding-top: 60px;
+    padding-bottom: 30px;
+}
+
+#footer-main-right {
+    padding-top: 30px;
+    padding-bottom: 60px;
+}
+
+#footer-main h3 {
+    font-size: 14px;
+    font-weight: 500;
+    margin-bottom: 23px;
+}
+
+#footer-main-right ul li>em {
+    display: inline-block;
+    width: 16px;
+    text-align: left;
+    font-weight: inherit;
+    font-style: normal;
+}
+
+#footer-phone-link {
+    margin-top: 24px;
+}
+
+@media only screen and (min-width: 480px) {
+    #footer-main {
+        text-align: left;
+    }
+    #footer-main-left {
+        float: left;
+        width: 48%;
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+    #footer-main-left ul {
+        float: left;
+    }
+    #footer-main-right {
+        float: right;
+        width: 40%;
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+}
+
+@media only screen and (min-width: 760px) {
+    #footer-main-left {
+        width: auto;
+    }
+    #footer-main-left ul#footer-main-left-menu1 {
+        margin-right: 40px;
+    }
+    #footer-main-right {
+        width: auto;
+        margin-right: 10px;
+    }
+}
+
+@media only screen and (min-width: 960px) {
+    #footer-main-left ul#footer-main-left-menu1 {
+        margin-right: 80px;
+    }
+    #footer-main-right {
+        margin-right: 80px;
+    }
+}
+
+
+/* footer bottom */
+
+#footer-bottom {
+    border-top: 1px solid $color-border-grey;
+}
+
+#footer-bottom-left {
+    float: left;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+#footer-bottom-left img {
+    width: 44px;
+    height: 44px;
+}
+
+#footer-bottom-right {
+    float: right;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+// footer bottom menu
+#footer-bottom-right ul#footer-bottom-menu {}
+
+#footer-bottom-right ul#footer-bottom-menu li {
+    display: inline-block;
+    margin-bottom: 5px;
+}
+
+// footer bottom social icons
+#footer-bottom-right ul#footer-bottom-social {}
+
+#footer-bottom-right ul#footer-bottom-social li {
+    display: inline-block;
+    position: relative;
+    top: 2px;
+}
+
+#footer-bottom-right ul#footer-bottom-social li+li {
+    margin-left: 16px;
+}
+
+#footer-bottom-right ul#footer-bottom-social li {
+    padding: 4px;
+}
+
+#footer-bottom-right ul#footer-bottom-social li a svg {
+    width: 15px;
+    height: 15px;
+}
+
+#footer-bottom-right ul#footer-bottom-social li a svg .icon-color {
+    fill: $color-grey;
+}
+
+.has-mouse #footer-bottom-right ul#footer-bottom-social li a svg .icon-color {
+    transition: fill .3s ease-in-out;
+}
+
+.has-mouse #footer-bottom-right ul#footer-bottom-social li a:hover svg .icon-color {
+    fill: $color-green;
+}
+
+@media only screen and (min-width: 480px) {
+    #footer-bottom-left {
+        padding-top: 40px;
+        padding-bottom: 60px;
+    }
+    #footer-bottom-right {
+        padding-top: 50px;
+        padding-bottom: 60px;
+    }
+    // footer bottom menu
+    #footer-bottom-right ul#footer-bottom-menu {
+        display: inline-block;
+    }
+    #footer-bottom-right ul#footer-bottom-menu li {
+        margin-bottom: 0;
+        margin-right: 40px;
+    }
+    // footer bottom social icons
+    #footer-bottom-right ul#footer-bottom-social {
+        display: inline-block;
+        color: $color-grey;
+    }
+}
+
+@media only screen and (min-width: 960px) {}

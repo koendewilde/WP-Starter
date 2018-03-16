@@ -1,0 +1,56 @@
+/* PAGINATION - Index  */
+
+#pagination {
+    padding-top: 40px;
+    padding-bottom: 10px;
+    font-size: 14px;
+    color: $color-grey;
+}
+
+#pagination ul {
+    width: 100%;
+    text-align: center;
+}
+
+#pagination ul li {
+    display: inline-block;
+    margin: 5px
+}
+
+#pagination ul li a {
+    display: block;
+    padding: 5px;
+}
+
+#pagination ul li a.prev {
+    margin-right: 5%;
+}
+
+#pagination ul li a.next {
+    margin-left: 5%;
+}
+
+#pagination ul li a {
+    color: $color-green-light;
+}
+
+.has-mouse #pagination ul li a {
+    transition: color .3s;
+}
+
+.has-mouse #pagination ul li a:hover {
+    color: $color-green;
+}
+
+#pagination.next-prev-list ul {
+    max-width: 220px;
+    margin: 0 auto;
+}
+
+#pagination.next-prev-list ul li.prev {
+    float: left;
+}
+
+#pagination.next-prev-list ul li.next {
+    float: right;
+}

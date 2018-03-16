@@ -1,0 +1,45 @@
+// sidebar layout
+.sidebar-right .wrapper-content {
+    position: relative;
+}
+
+.sidebar-right .wrapper-sidebar {
+    width: 100%;
+    max-width: 480px;
+    margin: 0 auto;
+}
+
+@media only screen and (min-width: 1024px) {
+    // sidebar layout
+    .sidebar-right .wrapper-content {
+        float: left;
+        width: 66%;
+        padding-right: 50px;
+    }
+    .sidebar-right .wrapper-sidebar {
+        float: right;
+        width: 34%;
+    }
+    .sidebar-right .wrapper-sidebar #sidebar-wrapper-content {
+        border-left: 4px solid #fff;
+        margin-top: 43px;
+        padding-left: 20px;
+        margin-right: -15%;
+    }
+    .sidebar-right .wrapper-sidebar {
+        padding-top: 131px;
+    }
+}
+
+// blocks
+.sidebar-block {
+    display: block;
+    margin-bottom: 50px;
+}
+
+.sidebar-block h4.widget-title {
+    font-weight: 300;
+    font-size: 20px;
+    padding-left: 30px;
+    margin-bottom: 35px;
+}

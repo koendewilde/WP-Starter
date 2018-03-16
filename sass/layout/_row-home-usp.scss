@@ -1,0 +1,63 @@
+#row-homepage-usp {
+    background-image: url(img/home/bg1.png);
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: auto 100px;
+    padding-top: 100px;
+    margin-bottom: 40px;
+}
+
+#row-homepage-usp>div {
+    border-top: 1px solid $color-green-lightest;
+    text-align: center;
+    padding: 0;
+    margin: 0 -1px;
+}
+
+#row-homepage-usp>div ul {
+    display: flex;
+    flex-grow: auto;
+    flex-direction: column;
+    border-right: 1px solid $color-green-lightest;
+}
+
+#row-homepage-usp>div ul li {
+    display: inline-block;
+    padding: 16px 16px;
+    border-bottom: 1px solid $color-green-lightest;
+    color: $color-green;
+    font-weight: 500;
+}
+
+@media only screen and (min-width: 480px) {
+    #row-homepage-usp {
+        background-size: auto 140px;
+        padding-top: 140px;
+        margin-bottom: 60px;
+    }
+}
+
+@media only screen and (min-width: 640px) {
+    #row-homepage-usp>div ul {
+        flex-direction: row;
+    }
+    #row-homepage-usp>div {
+        border-bottom: 1px solid $color-green-lightest;
+    }
+    #row-homepage-usp>div ul {
+        border-right: 1px solid $color-green-lightest;
+    }
+    #row-homepage-usp>div ul li {
+        flex-grow: 1;
+        border-left: 1px solid $color-green-lightest;
+        border-bottom: none;
+        padding: 32px 16px;
+    }
+}
+
+@media only screen and (min-width: 960px) {
+    #row-homepage-usp {
+        background-size: auto 180px;
+        padding-top: 180px;
+    }
+}

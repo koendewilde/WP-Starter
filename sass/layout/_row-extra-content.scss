@@ -1,0 +1,26 @@
+.row-extra-page-content {
+    padding-top: 50px;
+    padding-bottom: 40px;
+}
+
+.extra-page-content-wrapper.col1>div {
+    max-width: 680px;
+    margin: 0 auto;
+}
+
+.extra-page-content-wrapper>div h2.title--v2 {
+    margin-bottom: 40px;
+}
+
+@media only screen and (min-width: 640px) {
+    .extra-page-content-wrapper.col2>div {
+        float: left;
+        width: 50%;
+    }
+    .extra-page-content-wrapper.col2 div.ec-block1 {
+        padding-right: 16px;
+    }
+    .extra-page-content-wrapper.col2 div.ec-block2 {
+        padding-left: 16px;
+    }
+}

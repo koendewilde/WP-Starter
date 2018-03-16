@@ -1,0 +1,38 @@
+/* ROWS */
+
+.row-padding {
+    padding-bottom: 80px;
+}
+
+.row-margin {
+    margin-bottom: 80px;
+}
+
+.row-bg-grey {
+    background-color: $color-grey-bg;
+    padding-top: 80px;
+}
+
+
+/* ROW - Inline image */
+
+.row-inline-image {
+    text-align: center;
+}
+
+
+/* ROW - Background image */
+
+.row-bg-image {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    min-height: 400px;
+    max-width: 1680px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.row-bg-image-bg2 {
+    max-width: 1120px;
+}
