@@ -1,5 +1,5 @@
 # WP-Starter
 Starter WordPress Theme
 
-## TO DO
+## To do
 Create basic styling + icon
