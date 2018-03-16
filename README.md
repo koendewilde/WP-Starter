@@ -1,16 +1,13 @@
 # WP-Starter
 Starter WordPress Theme
 
-## To do
-- Create basic styling + icon
-
 ## Plugins
 
 #### Plugins MU
 - ACF Pro
+- Yoast
 
-#### Plugins ondersteund
-- Yoast 
+#### Plugins with scss styles
 - Gravity Forms 
 - Cookie
 - Password Protected (has problems on nGinx / Savvii)
@@ -25,3 +22,6 @@ Starter WordPress Theme
 ## JS - Libraries 
 - Slick-slider
 - Venobox
+
+## To do
+- Create basic styling + icon

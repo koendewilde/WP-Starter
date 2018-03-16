@@ -7,20 +7,7 @@ require get_template_directory() . '/f/f-helpers.php';
 
 /* PLUGINS */
 
-// GRAVITY
-add_filter( 'gform_enable_field_label_visibility_settings', '__return_true' );
-add_filter( 'gform_confirmation_anchor_2', '__return_false' );
-
-// PLUGIN Popular posts
-function kdw_trackable_post_types( $post_types ){	
-	$track_these_post_types_only = array( 'post' );	
-	return $track_these_post_types_only;
-}
-add_filter( 'wpp_trackable_post_types', 'kdw_trackable_post_types', 10, 1 );
-
-
-
-// PLUGIN - Advanced Custom Fields
+// PLUGIN - ACF
 if( function_exists('acf_add_options_page') ) {
     
 	// main options
@@ -32,14 +19,6 @@ if( function_exists('acf_add_options_page') ) {
 		'redirect'		=> false,
 		'position' 		=> 9
 	));
-    
-    acf_add_options_sub_page(
-        array(
-            'page_title' 	=> 'Vertalingen',
-            'menu_title'	=> 'Vertalingen',
-            'parent_slug'	=> 'theme-general-settings',
-        )
-    ); 
     
     acf_add_options_sub_page(
         array(
@@ -55,26 +34,14 @@ if( function_exists('acf_add_options_page') ) {
             'menu_title'	=> 'Extra',
             'parent_slug'	=> 'theme-general-settings',
         )
-    ); 
-    
+    );
     
 }
 
-
-// PLUGIN - Yoast metabox to bottom
+// PLUGIN - Yoast
 function da_yoasttobottom() {
 	return 'low';
 }
 add_filter( 'wpseo_metabox_prio', 'da_yoasttobottom');
 
-// Yoast breadcrumb hide home (can be conditional)
-// add_filter('wpseo_breadcrumb_single_link' ,'kdw_remove_home_yoast', 10 ,2);
-function kdw_remove_home_yoast($link_output, $link ){
-   
-    if( $link['text'] == 'Home' ) {
-        $link_output = '';
-    }
-
-    return $link_output;
-}
 ?>
