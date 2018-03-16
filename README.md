@@ -6,17 +6,17 @@ Create basic styling + icon
 
 ## Plugins
 
-### Plugins MU
+#### Plugins MU
 ACF Pro
 
 
-### Plugins ondersteund
-Yoast
-Gravity Forms
+#### Plugins ondersteund
+Yoast 
+Gravity Forms 
 Cookie
 Password Protected (has problems on nGinx / Savvii)
 
-### Plugins extra
+#### Plugins extra
 ACF Content Analysis
 Wordfence
 Activity Log
