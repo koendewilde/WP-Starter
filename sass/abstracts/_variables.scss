@@ -1,7 +1,7 @@
 // Variables
-// main colors
-$color-black: rgb(72, 72, 72);
-$color-grey: rgb(167, 178, 178);
+$color-black: rgb(68, 68, 68);
+$color-grey: rgb(168, 168, 168);
+$color-purple: rgb(111, 0, 222);
 
 /* extra colors */
 
@@ -10,7 +10,7 @@ $color-grey-light: rgb(188, 198, 198);
 // white
 $color-white: rgb(249, 255, 249);
 // green
-$color-green: rgb(0, 101, 53);
+$color-green: $color-purple;
 $color-green-light: rgb(99, 196, 103);
 $color-green-lightest: rgb(225, 240, 233);
 // green bg

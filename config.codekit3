@@ -22,20 +22,6 @@
 		"oAP": "\/dist\/acf-json",
 		"oF": 0
 		},
-	"\/assets\/logo-icon.afdesign": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/assets\/logo-icon.afdesign",
-		"oF": 0
-		},
-	"\/assets\/logo.afdesign": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/assets\/logo.afdesign",
-		"oF": 0
-		},
 	"\/css\/backend-min.css": {
 		"aP": 1,
 		"bl": 0,
@@ -138,39 +124,28 @@
 		"oA": 0,
 		"oAP": "\/img\/backend\/min\/logo.svg",
 		"oF": 0,
-		"opt": 0,
+		"opt": 1,
 		"plM": 3758088159,
 		"prP": 0
 		},
-	"\/img\/home\/bg1.png": {
-		"ft": 32768,
-		"iS": 114019,
-		"oA": 0,
-		"oAP": "\/img\/home\/min\/bg1.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
-	"\/img\/icons\/clock.svg": {
+	"\/img\/backend\/min\/logo.svg": {
 		"ft": 2097152,
 		"miP": 0,
 		"oA": 0,
-		"oAP": "\/img\/icons\/min\/clock.svg",
+		"oAP": "\/img\/backend\/min\/min\/logo.svg",
 		"oF": 0,
 		"opt": 0,
 		"plM": 3758088159,
 		"prP": 0
 		},
-	"\/img\/logo\/logo-icon.png": {
+	"\/img\/logo\/logo-icon-512x512.png": {
 		"ft": 32768,
-		"iS": 15878,
+		"iS": 15265,
 		"oA": 0,
-		"oAP": "\/img\/logo\/min\/logo-icon.png",
+		"oAP": "\/img\/logo\/min\/logo-icon-512x512.png",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 1,
+		"opt": 0,
 		"oT": 1,
 		"q": 100
 		},
@@ -180,20 +155,19 @@
 		"oA": 0,
 		"oAP": "\/img\/logo\/min\/logo-icon.svg",
 		"oF": 0,
-		"opt": 0,
+		"opt": 1,
 		"plM": 3758088159,
 		"prP": 0
 		},
-	"\/img\/logo\/logo.png": {
-		"ft": 32768,
-		"iS": 9659,
+	"\/img\/logo\/logo.svg": {
+		"ft": 2097152,
+		"miP": 0,
 		"oA": 0,
-		"oAP": "\/img\/logo\/min\/logo.png",
+		"oAP": "\/img\/logo\/min\/logo.svg",
 		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
+		"opt": 1,
+		"plM": 3758088159,
+		"prP": 0
 		},
 	"\/img\/logo\/min\/logo-icon.png": {
 		"ft": 32768,
@@ -206,6 +180,26 @@
 		"oT": 1,
 		"q": 100
 		},
+	"\/img\/logo\/min\/logo-icon.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 0,
+		"oAP": "\/img\/logo\/min\/min\/logo-icon.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/img\/logo\/min\/logo.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 0,
+		"oAP": "\/img\/logo\/min\/min\/logo.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
 	"\/img\/logo\/min\/OttoSchouten.svg": {
 		"ft": 2097152,
 		"miP": 0,
@@ -213,16 +207,6 @@
 		"oAP": "\/img\/logo\/min\/min\/OttoSchouten.svg",
 		"oF": 0,
 		"opt": 0,
-		"plM": 3758088159,
-		"prP": 0
-		},
-	"\/img\/logo\/OttoSchouten.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 0,
-		"oAP": "\/img\/logo\/min\/OttoSchouten.svg",
-		"oF": 0,
-		"opt": 1,
 		"plM": 3758088159,
 		"prP": 0
 		},
@@ -249,86 +233,6 @@
 		"mi": 1,
 		"oA": 0,
 		"oAP": "\/js\/custom.min.min.js",
-		"oF": 0,
-		"sC": 3,
-		"tS": 0
-		},
-	"\/js\/jquery.dlmenu.js": {
-		"ft": 64,
-		"ma": 0,
-		"mi": 1,
-		"oA": 0,
-		"oAP": "\/js\/jquery.dlmenu.min.js",
-		"oF": 0,
-		"sC": 3,
-		"tS": 0
-		},
-	"\/js\/jquery.dlmenu.min.js": {
-		"ft": 64,
-		"ma": 0,
-		"mi": 1,
-		"oA": 0,
-		"oAP": "\/js\/jquery.dlmenu.min.min.js",
-		"oF": 0,
-		"sC": 3,
-		"tS": 0
-		},
-	"\/js\/jquery.nice-select-custom.js": {
-		"ft": 64,
-		"ma": 0,
-		"mi": 1,
-		"oA": 0,
-		"oAP": "\/js\/jquery.nice-select-custom.min.js",
-		"oF": 0,
-		"sC": 3,
-		"tS": 0
-		},
-	"\/js\/jquery.nice-select-custom.min.js": {
-		"ft": 64,
-		"ma": 0,
-		"mi": 1,
-		"oA": 0,
-		"oAP": "\/js\/jquery.nice-select-custom.min.min.js",
-		"oF": 0,
-		"sC": 3,
-		"tS": 0
-		},
-	"\/js\/jquery.waypoints.min.js": {
-		"ft": 64,
-		"ma": 0,
-		"mi": 1,
-		"oA": 0,
-		"oAP": "\/js\/jquery.waypoints.min.min.js",
-		"oF": 0,
-		"sC": 3,
-		"tS": 0
-		},
-	"\/js\/slick.min.js": {
-		"ft": 64,
-		"ma": 0,
-		"mi": 1,
-		"oA": 0,
-		"oAP": "\/js\/slick.min.min.js",
-		"oF": 0,
-		"sC": 3,
-		"tS": 0
-		},
-	"\/js\/venobox.js": {
-		"ft": 64,
-		"ma": 0,
-		"mi": 1,
-		"oA": 0,
-		"oAP": "\/js\/venobox.min.js",
-		"oF": 0,
-		"sC": 3,
-		"tS": 0
-		},
-	"\/js\/venobox.min.js": {
-		"ft": 64,
-		"ma": 0,
-		"mi": 1,
-		"oA": 0,
-		"oAP": "\/js\/venobox.min.min.js",
 		"oF": 0,
 		"sC": 3,
 		"tS": 0
@@ -794,13 +698,6 @@
 		"ft": 8192,
 		"oA": 0,
 		"oAP": "\/style.css.map",
-		"oF": 0
-		},
-	"\/template-page-home.php": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/template-page-home.php",
 		"oF": 0
 		}
 	},
@@ -2668,7 +2565,7 @@
 		"strictUnits": 0
 		},
 	"languageDefaultsMARKDOWN": {
-		"autoOutputAction": 0,
+		"autoOutputAction": 1,
 		"autoOutputPathFilenamePattern": "*.html",
 		"autoOutputPathRelativePath": "",
 		"autoOutputPathReplace1": "",

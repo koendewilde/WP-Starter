@@ -23,5 +23,10 @@ Starter WordPress Theme
 - Slick-slider
 - Venobox
 
+## Fonts
+- Loaded in header.php
+- Open Sans 400,400i,700,700i
+
 ## To do
 - Create basic styling + icon
+-
