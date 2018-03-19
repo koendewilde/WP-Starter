@@ -1,14 +1,10 @@
-/* all buttons */
+/* buttons */
 
-.button-green-solid,
-.button-green-outline,
-#header-nav-wrapper nav ul#nav-header li.menu-button-contact a {
+.button-solid,
+.button-outline {
     display: inline-block;
     font-size: 14px;
     font-weight: 500;
-    color: $color-green;
-    background-color: $color-green-light;
-    border: 1px solid $color-green-light;
     border-radius: 4px;
     padding: 8px 24px;
     text-align: center;
@@ -17,58 +13,43 @@
 }
 
 
-/* button green solid */
+/* button solid */
 
 .button-green-solid {
-    color: $color-green;
-    background-color: $color-green-light;
-    border: 1px solid $color-green-light;
+    color: #fff;
+    background-color: $color-theme;
+    border: 1px solid $color-theme;
 }
 
-.has-mouse .button-green-solid {
+.has-mouse .button-solid {
     transition: all .3s;
 }
 
-.button-green-solid:focus,
-.has-mouse .button-green-solid:hover {
-    background-color: transparent; //$color-green-lightest;
-    color: $color-green;
-    border-color: $color-green;
+.button-solid:focus,
+.has-mouse .button-solid:hover {
+    background-color: $color-theme;
+    color: #fff;
+    border-color: $color-theme;
     text-decoration: none;
 }
 
-// button green outline
-#header-nav-wrapper nav ul#nav-header li.menu-button-contact a,
-.button-green-outline {
+// button outline
+.button-outline {
     background-color: transparent;
-    color: $color-green-light;
-    border: 1px solid $color-green-light;
+    border: 1px solid $color-theme;
+    color: $color-theme;
 }
 
-#header-nav-wrapper nav ul#nav-header li.menu-button-contact a,
-.has-mouse .button-green-outline {
+.has-mouse .button-outline {
     transition: all .3s ease-in-out;
 }
 
-.has-mouse #header-nav-wrapper nav ul#nav-header li.menu-button-contact a:hover,
-.button-green-outline:focus,
-.has-mouse .button-green-outline:hover {
-    background-color: transparent; //$color-green-lightest;
-    color: $color-green;
-    border-color: $color-green;
+.button-outline:focus,
+.has-mouse .button-outline:hover {
+    background-color: transparent;
+    color: $color-theme;
+    border-color: $color-theme;
     text-decoration: none!important;
-}
-
-// alt buttons
-.button-green-solid.icon1,
-.button-green-solid.icon2 {
-    background-image: url(img/icons/clock.svg);
-    background-repeat: no-repeat;
-    background-position: 8px center;
-    background-size: 18px 18px;
-    padding-left: 36px;
-    text-align: left;
-    min-width: auto;
 }
 
 // buttons wrapper
@@ -77,6 +58,7 @@
     margin-bottom: 16px;
 }
 
-.buttons-wrapper a+a {
+// check!!!
+.buttons-wrapper a:last-of-type {
     margin-right: 0;
 }

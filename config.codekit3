@@ -252,7 +252,7 @@
 		"ema": 1,
 		"eSQ": 1,
 		"ft": 4096,
-		"oA": 0,
+		"oA": 1,
 		"oAP": "\/README.html",
 		"oF": 0,
 		"oFM": 0,
@@ -431,19 +431,6 @@
 		"oS": 3,
 		"uL": 1
 		},
-	"\/sass\/layout\/_row-featured-tiles.scss": {
-		"aP": 0,
-		"bl": 0,
-		"dP": 10,
-		"dS": 0,
-		"ft": 4,
-		"ma": 1,
-		"oA": 1,
-		"oAP": "\/sass\/style.css",
-		"oF": 0,
-		"oS": 3,
-		"uL": 1
-		},
 	"\/sass\/layout\/_row-home-usp.scss": {
 		"aP": 0,
 		"bl": 0,
@@ -483,19 +470,6 @@
 		"oS": 3,
 		"uL": 1
 		},
-	"\/sass\/pages\/_contact.scss": {
-		"aP": 0,
-		"bl": 0,
-		"dP": 10,
-		"dS": 0,
-		"ft": 4,
-		"ma": 1,
-		"oA": 1,
-		"oAP": "\/sass\/style.css",
-		"oF": 0,
-		"oS": 3,
-		"uL": 1
-		},
 	"\/sass\/pages\/_homepage.scss": {
 		"aP": 0,
 		"bl": 0,
@@ -522,33 +496,7 @@
 		"oS": 3,
 		"uL": 1
 		},
-	"\/sass\/pages\/_page-partners.scss": {
-		"aP": 0,
-		"bl": 0,
-		"dP": 10,
-		"dS": 0,
-		"ft": 4,
-		"ma": 1,
-		"oA": 1,
-		"oAP": "\/sass\/style.css",
-		"oF": 0,
-		"oS": 3,
-		"uL": 1
-		},
 	"\/sass\/pages\/_page.scss": {
-		"aP": 0,
-		"bl": 0,
-		"dP": 10,
-		"dS": 0,
-		"ft": 4,
-		"ma": 1,
-		"oA": 1,
-		"oAP": "\/sass\/style.css",
-		"oF": 0,
-		"oS": 3,
-		"uL": 1
-		},
-	"\/sass\/pages\/_single-shops.scss": {
 		"aP": 0,
 		"bl": 0,
 		"dP": 10,

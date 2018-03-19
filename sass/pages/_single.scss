@@ -11,7 +11,7 @@
 }
 
 .single-post-meta-first a {
-    color: $color-green;
+    color: $color-theme;
 }
 
 .single-post-meta-second {
@@ -76,7 +76,7 @@
     width: 100%;
     padding-top: 50px;
     margin-bottom: 60px;
-    border-bottom: 1px solid $color-border-grey;
+    border-bottom: 1px solid $color-grey;
 }
 
 
@@ -195,7 +195,7 @@
 .slick-initialized .slick-slide {
     display: block;
     margin: 0 40px 0 0;
-    border: 1px solid $color-border-grey;
+    border: 1px solid $color-grey;
 }
 
 .slick-loading .slick-slide {

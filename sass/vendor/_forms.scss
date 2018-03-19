@@ -14,7 +14,7 @@ input,
 select,
 textarea {
     background-color: #fff;
-    border: 1px solid $color-border-green;
+    border: 1px solid $color-black;
     color: $color-black;
     font-family: inherit;
     font-size: 14px;
@@ -34,7 +34,7 @@ body .gform_wrapper select {
 
 input:focus,
 textarea:focus {
-    border-color: $color-green;
+    border-color: $color-theme;
     outline: none;
 }
 
@@ -54,8 +54,8 @@ body .gform_wrapper .gform_page_footer input[type=submit] {
     display: inline-block;
     font-size: 14px;
     color: #fff;
-    background-color: $color-green;
-    border: 1px solid $color-border-green;
+    background-color: $color-theme;
+    border: 1px solid #fff;
     border-radius: 8px;
     padding: 13px;
     text-align: center;
@@ -78,7 +78,7 @@ input:focus[type="button"],
 input:focus[type="reset"],
 input:focus[type="submit"],
 .button:focus {
-    background-color: $color-green;
+    background-color: $color-theme;
     color: #fff;
 }
 
@@ -126,50 +126,31 @@ input[type="search"]::-webkit-search-results-button {
     opacity: 1;
 }
 
-
-/* PLACEHOLDER Serif */
-
-.serif-placeholder ::-webkit-input-placeholder {
-    font-family: 'Lora', serif;
-}
-
-.serif-placeholder ::-moz-placeholder {
-    font-family: 'Lora', serif;
-}
-
-.serif-placeholder :-ms-input-placeholder {
-    font-family: 'Lora', serif;
-}
-
-.serif-placeholder :-moz-placeholder {
-    font-family: 'Lora', serif;
-}
-
 // home search
 #search-header-home-wrapper ::-webkit-input-placeholder {
     /* Chrome/Opera/Safari */
-    color: $color-grey-light;
+    color: $color-grey;
     font-size: 16px;
     font-weight: 300;
 }
 
 #search-header-home-wrapper ::-moz-placeholder {
     /* Firefox 19+ */
-    color: $color-grey-light;
+    color: $color-grey;
     font-size: 16px;
     font-weight: 300;
 }
 
 #search-header-home-wrapper :-ms-input-placeholder {
     /* IE 10+ */
-    color: $color-grey-light;
+    color: $color-grey;
     font-size: 16px;
     font-weight: 300;
 }
 
 #search-header-home-wrapper :-moz-placeholder {
     /* Firefox 18- */
-    color: $color-grey-light;
+    color: $color-grey;
     font-size: 16px;
     font-weight: 300;
 }
@@ -275,7 +256,7 @@ body .gform_wrapper .field_description_below .gfield_description {
 
 body .gform_wrapper .validation_message {
     display: none;
-    color: $color-green;
+    color: $color-theme;
     font-size: 14px;
     font-weight: normal;
     padding: 0 0 0 16px;
@@ -283,7 +264,7 @@ body .gform_wrapper .validation_message {
 
 body .gform_wrapper .gfield_error .gfield_label,
 body .gform_wrapper .gfield_required {
-    color: $color-green;
+    color: $color-theme;
 }
 
 body .gform_wrapper li.gfield.gfield_error.gfield_contains_required label.gfield_label {
@@ -309,7 +290,7 @@ body .gform_wrapper img.gform_ajax_spinner {
 
 body .gform_wrapper li.gfield_error input:not([type=radio]):not([type=checkbox]):not([type=submit]):not([type=button]):not([type=image]):not([type=file]),
 body .gform_wrapper li.gfield_error textarea {
-    border-color: $color-red;
+    border-color: $color-error;
 }
 
 body .gform_confirmation_wrapper div.gform_confirmation_message,
@@ -322,7 +303,7 @@ body .gform_wrapper div.validation_error {
     padding: 12px 18px;
     background: #fff;
     border-radius: 8px;
-    border: 1px solid $color-border-green;
+    border: 1px solid $color-theme;
     font-weight: normal;
     font-size: 14px;
     width: calc(100% - 16px);

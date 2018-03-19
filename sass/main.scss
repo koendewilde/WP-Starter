@@ -27,7 +27,7 @@ a {
 
 a:hover,
 a:focus {
-    color: $color-green;
+    color: $color-theme;
     text-decoration: none;
 }
 
@@ -218,7 +218,6 @@ a:active {
 @import 'layout/header';
 // Pages - Homepage
 @import 'pages/homepage';
-@import 'pages/contact';
 @import 'components/pagination';
 @import 'pages/page';
 @import 'pages/single';
@@ -228,11 +227,6 @@ a:active {
 // entry content style
 @import 'components/entry-content';
 // rows
-@import 'layout/row-cta-small';
-@import 'layout/row-contact-cta';
-@import 'layout/row-featured-tiles';
-@import 'layout/row-extra-content';
-@import 'layout/row-home-usp';
 @import 'layout/footer';
 @import 'vendor/forms';
 @import 'vendor/wordpress';

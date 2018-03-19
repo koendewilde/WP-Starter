@@ -31,7 +31,7 @@
 }
 
 #pagination ul li a {
-    color: $color-green-light;
+    color: $color-black;
 }
 
 .has-mouse #pagination ul li a {
@@ -39,7 +39,7 @@
 }
 
 .has-mouse #pagination ul li a:hover {
-    color: $color-green;
+    color: $color-theme;
 }
 
 #pagination.next-prev-list ul {

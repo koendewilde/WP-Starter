@@ -5,33 +5,14 @@
     line-height: 1.7;
 }
 
-// serif 
-.entry-content.serif {
-    font-family: 'Lora', serif;
-}
-
 // small
 .entry-content.small {
     font-size: 14px;
 }
 
-.entry-content.size15 {
-    font-size: 15px;
-}
-
-// medium
-.entry-content.medium {
-    font-size: 18px;
-}
-
 // large
 .entry-content.large {
-    font-size: 22px;
-}
-
-// content color
-.entry-content.grey {
-    color: $color-grey;
+    font-size: 21px;
 }
 
 .entry-content p {
@@ -40,7 +21,7 @@
 
 a.read-on,
 .entry-content a {
-    color: $color-green;
+    color: $color-theme;
 }
 
 .has-mouse a.read-on,
@@ -60,22 +41,15 @@ a.read-on,
 .entry-content em,
 .entry-content italic {}
 
-.entry-content.serif h1,
-.entry-content.serif h2,
-.entry-content.serif h3,
-.entry-content.serif h4,
-.entry-content.serif h5,
-.entry-content.serif h6,
 .entry-content h1,
 .entry-content h2,
 .entry-content h3,
 .entry-content h4,
 .entry-content h5,
 .entry-content h6 {
-    font-family: 'Roboto', sans-serif;
     margin: 0 0 10px;
     padding: 20px 0 0 0;
-    font-weight: 400;
+    font-weight: 600;
 }
 
 .entry-content h1,
@@ -110,7 +84,7 @@ a.read-on,
 .entry-content blockquote p {
     font-size: 23px;
     line-height: 1.5;
-    color: $color-green;
+    color: $color-theme;
 }
 
 .entry-content blockquote cite {
@@ -243,7 +217,7 @@ a.read-on,
 .entry-content .wp-caption-text,
 .entry-content .wp-caption .wp-caption-text,
 .entry-content .gallery-caption {
-    font-family: 'Roboto', sans-serif;
+    font-family: inherit;
     font-weight: 400;
     font-size: 14px;
     margin: 0;
@@ -353,42 +327,4 @@ a.read-on,
 
 .entry-content .gallery .gallery-item .gallery-caption {
     display: none;
-}
-
-
-/* styles */
-
-.has-mouse .entry-content a.button-solid-green,
-.entry-content a.button-solid-green {
-    color: #fff;
-    text-decoration: none;
-}
-
-
-/* image credit */
-
-.entry-content .image-credit-wrapper {
-    position: relative;
-}
-
-.entry-content a.image-credit,
-.entry-content span.image-credit {
-    display: block;
-    position: absolute;
-    right: 5%;
-    bottom: 5%;
-    border-radius: 8px;
-    color: $color-white;
-    border: 1px solid #fff;
-    font-size: 14px;
-    font-family: 'Roboto', sans-serif;
-    font-weight: 500;
-    padding: 5px 8px;
-    text-decoration: none;
-}
-
-.has-mouse .entry-content a.image-credit:hover,
-.entry-content a.image-credit:hover {
-    text-decoration: none;
-    color: $color-white;
 }

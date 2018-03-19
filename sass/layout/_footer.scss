@@ -1,5 +1,5 @@
 #footer {
-    border-top: 1px solid $color-border-grey;
+    border-top: 1px solid $color-grey;
     position: relative;
     font-size: 14px;
     font-weight: 300;
@@ -87,7 +87,7 @@
 /* footer bottom */
 
 #footer-bottom {
-    border-top: 1px solid $color-border-grey;
+    border-top: 1px solid $color-grey;
 }
 
 #footer-bottom-left {
@@ -146,7 +146,7 @@
 }
 
 .has-mouse #footer-bottom-right ul#footer-bottom-social li a:hover svg .icon-color {
-    fill: $color-green;
+    fill: $color-theme;
 }
 
 @media only screen and (min-width: 480px) {
