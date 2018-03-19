@@ -26,7 +26,7 @@
         var scroll_pos = 0;
         jQuery(document).scroll(function () {
             scroll_pos = jQuery(this).scrollTop();
-            var h = 65;
+            var h = 5;
             if (scroll_pos > h) {
                 jQuery('html').addClass('scrolled');
             } else {

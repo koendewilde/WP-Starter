@@ -1,11 +1,13 @@
 /* buttons */
 
+ul#main-menu li.menu-button-outline>a,
+ul#main-menu li.menu-button-solid>a,
 .button-solid,
 .button-outline {
     display: inline-block;
-    font-size: 14px;
-    font-weight: 500;
-    border-radius: 4px;
+    font-size: inherit;
+    font-weight: 400;
+    border-radius: $border-radius;
     padding: 8px 24px;
     text-align: center;
     min-width: 120px;
@@ -15,41 +17,55 @@
 
 /* button solid */
 
+ul#main-menu li.menu-button-solid>a,
 .button-green-solid {
     color: #fff;
     background-color: $color-theme;
     border: 1px solid $color-theme;
 }
 
+.has-mouse ul#main-menu li.menu-button-solid>a,
 .has-mouse .button-solid {
     transition: all .3s;
 }
 
+ul#main-menu .li.menu-button-solid>a:focus,
+.has-mouse ul#main-menu li.menu-button-solid>a:hover,
 .button-solid:focus,
 .has-mouse .button-solid:hover {
-    background-color: $color-theme;
-    color: #fff;
+    background-color: transparent;
+    color: $color-theme;
     border-color: $color-theme;
     text-decoration: none;
 }
 
 // button outline
+ul#main-menu li.menu-button-outline>a,
 .button-outline {
     background-color: transparent;
     border: 1px solid $color-theme;
     color: $color-theme;
 }
 
+.has-mouse ul#main-menu li.menu-button-outline>a,
 .has-mouse .button-outline {
     transition: all .3s ease-in-out;
 }
 
+ul#main-menu li.menu-button-outline>a:focus,
+.has-mouse ul#main-menu li.menu-button-outline>a:hover,
 .button-outline:focus,
 .has-mouse .button-outline:hover {
-    background-color: transparent;
-    color: $color-theme;
+    background-color: $color-theme;
+    color: #fff;
     border-color: $color-theme;
     text-decoration: none!important;
+}
+
+// menu buttons
+ul#main-menu li.menu-button-outline>a,
+ul#main-menu li.menu-button-solid>a {
+    font-size: inherit;
 }
 
 // buttons wrapper

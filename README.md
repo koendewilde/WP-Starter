@@ -1,6 +1,5 @@
 # WP-Starter
-Starter WordPress Theme
-
+A WordPress starter theme.
 
 ## Plugins
 
@@ -25,20 +24,26 @@ Starter WordPress Theme
 
 
 ## JS - Libraries 
-- Slick-slider
-- Venobox
 
 
 ## Fonts
-- Loaded in header.php
+- Google font loaded in header.php
 - Open Sans 400,400i,700,700i
 
 
 ## Classes
-- buttons: button-outline & button-solid
-- menu button: menu-button-outline & menu-button-solid
+- buttons: .button-outline & .button-solid (also available Main Header Menu)
+- 
 
 
 ## To do
-- Create basic styling + icon
--
+- Clean & Restructure
+- Mobile menu
+- Dropdown menu
+- Current menu item
+- Homepage template + ACF
+- ACF admin basics (404, scripts)
+- Footer styling + ACF options
+- Social media buttons with svg inside single php function
+- Extra content field. function + css + ACF
+- Cookie plugin css + settings 

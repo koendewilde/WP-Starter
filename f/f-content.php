@@ -2,7 +2,7 @@
 
 /* Register Menu's */ 
 function kdw_register_nav_menus() {
-    register_nav_menu('header-menu', 'Hoofd Menu' );
+    register_nav_menu('main-menu', 'Hoofd Menu' );
     register_nav_menu('footer-menu-left', 'Footer Menu Left' );
     register_nav_menu('footer-menu-right', 'Footer Menu Right' );
     register_nav_menu('footer-menu-bottom', 'Footer Menu Bottom' );

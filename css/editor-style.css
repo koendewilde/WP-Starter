@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700,700i');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,400i,600,600i');
 html {
     padding: 15px;
 }
@@ -255,22 +255,4 @@ div.wp-caption {
     line-height: 17px;
     margin: 0;
     padding: 0 4px 5px;
-}
-
-
-/* styles */
-
-.button-solid-green {
-    font-weight: 400;
-    font-size: 17px;
-    padding: 9px 22px;
-    display: inline-block;
-    background-color: #348452;
-    color: #fff;
-    letter-spacing: 1px;
-    text-decoration: none;
-}
-
-.serif {
-    font-family: serif;
 }

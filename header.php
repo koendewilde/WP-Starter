@@ -19,7 +19,7 @@
 <body <?php body_class(); ?>>
     <div id="header-wrapper">
 
-        <div id="menu-bar" class="wrapper-outer">
+        <div class="wrapper-outer">
 
             <header class="site-header wrapper-large">
 

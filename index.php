@@ -3,25 +3,18 @@
 <main>
     <section id="section-index">
 
-        <div id="intro-wrapper" class="wrapper-outer clearfix">
 
+        <div id="page-intro" class="wrapper-outer intro-padding clearfix">
             <div class="wrapper-small">
-
                 <header>
-                    <h2 class="title--top small">
-                        Nieuws
-                    </h2>
                     <h1 class="title--main">
-                        Blijf op de hoogte
+                        <?php echo get_the_title( get_option('page_for_posts') ); ?>
                     </h1>
                 </header>
-
             </div>
-
         </div>
 
-
-        <div id="page-content" class="row-bg-grey row-padding row-margin clearfix wrapper-outer">
+        <div id="page-content" class="row-bg-grey row-bg-padding clearfix wrapper-outer">
 
             <div class="wrapper-main">
 

@@ -118,6 +118,16 @@
 		"oAP": "\/header.php",
 		"oF": 0
 		},
+	"\/img\/ fallback-4x3.jpg": {
+		"ft": 16384,
+		"iS": 72698,
+		"oA": 0,
+		"oAP": "\/img\/min\/ fallback-4x3.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"q": 100
+		},
 	"\/img\/backend\/logo.svg": {
 		"ft": 2097152,
 		"miP": 0,
@@ -149,6 +159,16 @@
 		"oT": 1,
 		"q": 100
 		},
+	"\/img\/logo\/logo-icon-white.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 0,
+		"oAP": "\/img\/logo\/min\/logo-icon-white.svg",
+		"oF": 0,
+		"opt": 1,
+		"plM": 3758088159,
+		"prP": 0
+		},
 	"\/img\/logo\/logo-icon.svg": {
 		"ft": 2097152,
 		"miP": 0,
@@ -166,6 +186,16 @@
 		"oAP": "\/img\/logo\/min\/logo.svg",
 		"oF": 0,
 		"opt": 1,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/img\/logo\/min\/logo-icon-white.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 0,
+		"oAP": "\/img\/logo\/min\/min\/logo-icon-white.svg",
+		"oF": 0,
+		"opt": 0,
 		"plM": 3758088159,
 		"prP": 0
 		},
@@ -209,6 +239,16 @@
 		"opt": 0,
 		"plM": 3758088159,
 		"prP": 0
+		},
+	"\/img\/min\/ fallback-4x3.jpg": {
+		"ft": 16384,
+		"iS": 37200,
+		"oA": 0,
+		"oAP": "\/img\/min\/min\/ fallback-4x3.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
 		},
 	"\/index.php": {
 		"cB": 0,

@@ -6,15 +6,13 @@
 
     <section id="section-single">
 
-        <div id="page-content" class="clearfix wrapper-outer">
+        <div id="page-intro" class="clearfix wrapper-outer intro-padding">
 
             <div class="wrapper-small clearfix">
 
                 <div class="wrapper-content">
 
                     <header>
-
-                        <h2 class="title--top small"><a href="<?php echo get_permalink(get_option('page_for_posts')); ?>">Nieuws</a></h2>
 
                         <h1 class="title--main">
                             <?php the_title(); ?>
@@ -27,6 +25,15 @@
                         </div>
 
                     </header>
+                </div>
+            </div>
+        </div>
+
+        <div id="page-content" class="clearfix wrapper-outer">
+
+            <div class="wrapper-small clearfix">
+
+                <div class="wrapper-content">
 
                     <div class="entry-content">
                         <?php the_content(); ?>
@@ -35,8 +42,8 @@
                 </div>
 
             </div>
-
         </div>
+
 
     </section>
 

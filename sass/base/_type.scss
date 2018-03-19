@@ -2,7 +2,7 @@
 body {
     font-family: 'Open Sans', sans-serif;
     font-weight: 400;
-    font-size: 16px;
+    font-size: 15px;
     color: $color-black;
     line-height: 1.6;
 }
@@ -19,7 +19,7 @@ h4,
 h5,
 h6 {
     font-weight: 700;
-    line-height: 1.2;
+    line-height: 1.4;
     margin: 0 0 24px;
 }
 
@@ -48,48 +48,29 @@ h6 {
 }
 
 // Titles
-h2.title--top {
-    font-size: 40px;
-    line-height: 1.4;
-    font-weight: 700;
-    color: $color-theme;
-    margin-bottom: 8px;
-    min-height: 56px;
-}
-
-// home title = uppercase:
-h2.title--top.uppercase {
-    letter-spacing: 2px;
-    font-size: 36px;
-}
-
-// small top title
-h2.title--top.small {
-    font-size: 30px;
-}
-
 h1.title--main {
-    font-size: 42px;
-    line-height: 1.4;
+    font-size: 36px;
     font-weight: 400;
     color: $color-black;
     margin-bottom: 32px;
 }
 
-h2.title--v1 {
+h2.title--v1,
+h3.title--v1 {
     font-size: 25px;
     font-weight: 400;
     color: $color-theme;
     margin-bottom: 32px;
 }
 
-h2.title--v2 {
+h2.title--v2,
+h3.title--v2 {
     font-size: 21px;
     font-weight: 400;
     color: $color-theme;
     margin-bottom: 32px;
 }
 
-h2.title--v2.black {
+h2.title--v1.black h3.title--v1.black h2.title--v2.black h3.title--v2.black {
     color: $color-black;
 }

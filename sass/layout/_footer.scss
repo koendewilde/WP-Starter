@@ -1,8 +1,22 @@
 #footer {
-    border-top: 1px solid $color-grey;
     position: relative;
     font-size: 14px;
     font-weight: 300;
+    background: $color-theme;
+    color: #fff;
+}
+
+#footer a {
+    border-bottom: 1px solid transparent;
+}
+
+.has-mouse #footer a {
+    transition: border-bottom .3s ease-in-out
+}
+
+.has-mouse #footer a:hover {
+    color: inherit;
+    border-bottom: 1px solid #fff;
 }
 
 
@@ -87,7 +101,7 @@
 /* footer bottom */
 
 #footer-bottom {
-    border-top: 1px solid $color-grey;
+    border-top: 1px solid #fff;
 }
 
 #footer-bottom-left {
@@ -97,8 +111,8 @@
 }
 
 #footer-bottom-left img {
-    width: 44px;
-    height: 44px;
+    width: 36px;
+    height: 36px;
 }
 
 #footer-bottom-right {
@@ -108,9 +122,9 @@
 }
 
 // footer bottom menu
-#footer-bottom-right ul#footer-bottom-menu {}
+ul#footer-bottom-menu {}
 
-#footer-bottom-right ul#footer-bottom-menu li {
+ul#footer-bottom-menu li {
     display: inline-block;
     margin-bottom: 5px;
 }
@@ -146,7 +160,7 @@
 }
 
 .has-mouse #footer-bottom-right ul#footer-bottom-social li a:hover svg .icon-color {
-    fill: $color-theme;
+    fill: #fff;
 }
 
 @media only screen and (min-width: 480px) {
@@ -159,12 +173,15 @@
         padding-bottom: 60px;
     }
     // footer bottom menu
-    #footer-bottom-right ul#footer-bottom-menu {
+    ul#footer-bottom-menu {
         display: inline-block;
     }
-    #footer-bottom-right ul#footer-bottom-menu li {
+    ul#footer-bottom-menu li {
         margin-bottom: 0;
         margin-right: 40px;
+    }
+    ul#footer-bottom-menu li:last-of-type {
+        margin-right: 0;
     }
     // footer bottom social icons
     #footer-bottom-right ul#footer-bottom-social {

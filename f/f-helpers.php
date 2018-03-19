@@ -129,41 +129,43 @@ function kdw_row_tiles_txt_img (){
 }
 
 
-//
-// OLD OLD OLD 
-//
 
-function kdw_get_post_tile($i=0){
+
+function kdw_get_post_tile($i=0,$date=true){
     
-    global $post;
-    $cpt = $post->post_type;
-    if ($cpt == 'post-stylists')
-    {
-         
-    }  
-    else 
-    {
-        // post
-        echo '<a href="'.get_the_permalink().'" class="post-tile post-tile'.$i.' post-tile-'.$cpt.'">';
+    echo '<a href="'.get_the_permalink().'" class="post-tile post-tile'.$i.'">';
 
-            if ( has_post_thumbnail() ) {
-                $bg_img = wp_get_attachment_image_src( get_post_thumbnail_id() , 'medium');
-                $tile_bg = 'background-image:url('.$bg_img[0].');';  
-                echo '<div class="post-tile-bg" style="'.$tile_bg.'"><span></span></div>';
-            } else {
-                echo '<div class="post-tile-bg post-tile-bg-empty"><span></span></div>';
+        if ( has_post_thumbnail() ) {
+            $bg_img = wp_get_attachment_image_src( get_post_thumbnail_id() , 'medium');
+            $tile_bg = 'background-image:url('.$bg_img[0].');';  
+            echo '<div class="post-tile-bg" style="'.$tile_bg.'"><span></span></div>';
+        } else {
+            echo '<div class="post-tile-bg post-tile-bg-empty"><span></span></div>';
+        }
+    
+        echo '<div class="post-tile-content">';
+    
+            echo '<h2 class="title--v2">'.get_the_title().'</h2>';
+            
+            if ( $date == true ){
+                echo '<div class="post-tile-meta">';
+                    the_date();
+                echo '</div>';
+                
             }
-            echo '<div class="post-tile-content">';
-                echo '<h2 class="title--v2">'.get_the_title().'</h2>';
-                echo '<p>'.excerpt(24).'</p>';
-            echo '</div>';
+    
+            echo '<p>'.excerpt(24).'</p>';
+    
+        echo '</div>';
 
-        echo '</a>';
-    }
+    echo '</a>';
+
 }
 
 
-
+//
+// OLD OLD OLD 
+//
 
 //
 // header image

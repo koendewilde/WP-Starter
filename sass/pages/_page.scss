@@ -1,3 +1,11 @@
+/* Page / Post intro */
+
+.intro-padding {
+    padding-top: 80px;
+    padding-bottom: 56px;
+}
+
+
 /* ROWS */
 
 .row-padding {
@@ -9,30 +17,10 @@
 }
 
 .row-bg-grey {
-    background-color: $color-grey;
-    padding-top: 80px;
+    background-color: $color-grey-light;
 }
 
-
-/* ROW - Inline image */
-
-.row-inline-image {
-    text-align: center;
-}
-
-
-/* ROW - Background image */
-
-.row-bg-image {
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    min-height: 400px;
-    max-width: 1680px;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.row-bg-image-bg2 {
-    max-width: 1120px;
+.row-bg-padding {
+    padding-top: 40px;
+    padding-bottom: 40px;
 }

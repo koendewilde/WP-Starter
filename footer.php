@@ -35,24 +35,7 @@
                 </li>
             </ul>
 
-        </div>
-
-
-    </div>
-
-    <div id="footer-bottom" class="wrapper-main clearfix">
-
-        <div id="footer-bottom-left">
-            <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/logo/logo-icon.svg" alt="Otto Schouten" />
-        </div>
-
-        <div id="footer-bottom-right">
-
-            <ul id="footer-bottom-menu">
-                <?php wp_nav_menu( array( 'theme_location' => 'footer-menu-bottom', 'container' => false, 'items_wrap' => '%3$s' ) ); ?>
-            </ul>
-
-            <ul id="footer-bottom-social">
+            <ul id="footer-main-social">
                 <?php
                 $linkedin = esc_url( get_field('kdw_footer_social_linkedin','options') );
                 if( $linkedin && $linkedin != '' ){
@@ -73,6 +56,22 @@
                 ?>
             </ul>
 
+
+        </div>
+
+
+    </div>
+
+    <div id="footer-bottom" class="wrapper-large clearfix">
+
+        <div id="footer-bottom-left">
+            <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/logo/min/logo-icon-white.svg" alt="<?php echo get_bloginfo('name'); ?>" />
+        </div>
+
+        <div id="footer-bottom-right">
+            <ul id="footer-bottom-menu">
+                <?php wp_nav_menu( array( 'theme_location' => 'footer-menu-bottom', 'container' => false, 'items_wrap' => '%3$s' ) ); ?>
+            </ul>
         </div>
 
     </div>

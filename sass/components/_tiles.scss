@@ -8,7 +8,8 @@
     width: calc(33.33% - 64px);
     margin: 32px;
     background: #fff;
-    border-radius: 0 0 4px 4px;
+    border-radius: $border-radius;
+    overflow: hidden;
 }
 
 a.post-tile:hover {
@@ -27,7 +28,24 @@ a.post-tile:hover {
 }
 
 .post-tile-content {
-    padding: 24px 16px 16px;
+    padding: 24px 16px 24px;
+}
+
+.post-tile-content h2.title--v2 {
+    min-height: 66px;
+    margin-bottom: 8px;
+}
+
+.post-tile-content .post-tile-meta {
+    font-size: 13px;
+    font-weight: 700;
+    clear: both;
+    overflow: hidden;
+    margin: 0 0 8px;
+}
+
+.post-tile-content p {
+    margin: 0;
 }
 
 // hover bg img
