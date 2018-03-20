@@ -17,11 +17,12 @@ textarea {
     border: 1px solid $color-black;
     color: $color-black;
     font-family: inherit;
-    font-size: 14px;
+    font-size: inherit;
     font-weight: normal;
-    padding: 13px;
+    line-height: 1.6;
+    padding: 10px 16px;
     width: 100%;
-    border-radius: 8px;
+    border-radius: $border-radius;
 }
 
 body .gform_wrapper textarea {
@@ -33,8 +34,11 @@ body .gform_wrapper select {
 }
 
 input:focus,
-textarea:focus {
-    border-color: $color-theme;
+textarea:focus,
+.entry-content .gform_wrapper input:not([type=radio]):not([type=checkbox]):not([type=submit]):not([type=button]):not([type=image]):not([type=file]):focus,
+.entry-content .gform_wrapper select:focus,
+.entry-content .gform_wrapper textarea:focus {
+    border-color: $color-grey;
     outline: none;
 }
 
@@ -56,7 +60,7 @@ body .gform_wrapper .gform_page_footer input[type=submit] {
     color: #fff;
     background-color: $color-theme;
     border: 1px solid #fff;
-    border-radius: 8px;
+    border-radius: $border-radius;
     padding: 13px;
     text-align: center;
     min-width: 160px;
@@ -92,7 +96,7 @@ input[type="search"]::-webkit-search-results-button {
 }
 
 
-/* PLACEHOLDERS */
+/* INPUT PLACEHOLDERS */
 
 ::-webkit-input-placeholder {
     /* Chrome/Opera/Safari */
@@ -126,83 +130,34 @@ input[type="search"]::-webkit-search-results-button {
     opacity: 1;
 }
 
-// home search
-#search-header-home-wrapper ::-webkit-input-placeholder {
-    /* Chrome/Opera/Safari */
-    color: $color-grey;
-    font-size: 16px;
-    font-weight: 300;
-}
 
-#search-header-home-wrapper ::-moz-placeholder {
-    /* Firefox 19+ */
-    color: $color-grey;
-    font-size: 16px;
-    font-weight: 300;
-}
-
-#search-header-home-wrapper :-ms-input-placeholder {
-    /* IE 10+ */
-    color: $color-grey;
-    font-size: 16px;
-    font-weight: 300;
-}
-
-#search-header-home-wrapper :-moz-placeholder {
-    /* Firefox 18- */
-    color: $color-grey;
-    font-size: 16px;
-    font-weight: 300;
-}
-
-
-/* GRAVITY */
+/* GRAVITY  - always place form inside div.entry-content */
 
 .entry-content .gform_wrapper {
-    font-family: 'Roboto', sans-serif;
     max-width: 640px;
     margin: 0 auto;
-}
-
-.entry-content .gform_wrapper .top_label .gfield_label {
-    font-family: 'Roboto', sans-serif;
-    font-weight: 300;
-    padding-top: 6px;
-}
-
-
-/* realy hide hidden labels */
-
-.gform_wrapper .hidden_label .gfield_label,
-.gform_wrapper label.hidden_sub_label,
-.gform_wrapper label.screen-reader-text {
-    opacity: 0;
-    display: none;
 }
 
 
 /* labels */
 
-body .gform_wrapper .field_sublabel_above .ginput_complex.ginput_container label,
-body .gform_wrapper .field_sublabel_above div[class*=gfield_date_].ginput_container label,
-body .gform_wrapper .field_sublabel_above div[class*=gfield_time_].ginput_container label,
-body .gform_wrapper .field_sublabel_below .ginput_complex.ginput_container label,
-body .gform_wrapper .field_sublabel_below div[class*=gfield_date_].ginput_container label,
-body .gform_wrapper .field_sublabel_below div[class*=gfield_time_].ginput_container label {
-    font-size: 13px;
-    color: $color-grey;
+.entry-content .gform_wrapper .top_label .gfield_label {
+    font-weight: 400;
+    font-size: 90%;
+    padding-top: 12px;
+}
+
+body .entry-content .gform_wrapper .top_label div.ginput_container,
+body .entry-content .gform_wrapper li.gfield.gfield_error.gfield_contains_required div.ginput_container {
+    margin-top: 4px;
+}
+
+body .entry-content .gform_wrapper li.gfield.gfield_error.gfield_contains_required label.gfield_label {
+    margin-top: 0;
 }
 
 
-/* html fields gravity */
-
-body .gform_wrapper .gform_body ul li.gfield_html {
-    padding-top: 50px;
-    padding-bottom: 10px;
-}
-
-
-/* radio */
+/* radio + checkbox */
 
 body .gform_wrapper ul.gfield_checkbox li label,
 body .gform_wrapper ul.gfield_radio li label {
@@ -216,6 +171,16 @@ body .entry-content .gform_wrapper ul li.field_description_below div.ginput_cont
 body .entry-content .gform_wrapper ul li.field_description_below div.ginput_container_radio {
     margin-top: 0;
     padding-bottom: 1px;
+}
+
+
+/* hide hidden labels */
+
+.gform_wrapper .hidden_label .gfield_label,
+.gform_wrapper label.hidden_sub_label,
+.gform_wrapper label.screen-reader-text {
+    opacity: 0;
+    display: none;
 }
 
 
@@ -281,16 +246,18 @@ body .gform_wrapper .gform_footer {
 body .gform_wrapper img.gform_ajax_spinner {
     display: block;
     position: absolute;
-    top: 8px;
-    right: 6%;
+    top: 25px;
+    right: 5%;
     padding: 6px;
-    background: #fff;
     border-radius: 50%;
+    background: $color-theme;
+    width: 32px;
+    height: 32px;
 }
 
 body .gform_wrapper li.gfield_error input:not([type=radio]):not([type=checkbox]):not([type=submit]):not([type=button]):not([type=image]):not([type=file]),
 body .gform_wrapper li.gfield_error textarea {
-    border-color: $color-error;
+    border-color: $color-theme;
 }
 
 body .gform_confirmation_wrapper div.gform_confirmation_message,
@@ -302,7 +269,7 @@ body .gform_wrapper div.validation_error {
     text-align: inherit;
     padding: 12px 18px;
     background: #fff;
-    border-radius: 8px;
+    border-radius: $border-radius;
     border: 1px solid $color-theme;
     font-weight: normal;
     font-size: 14px;

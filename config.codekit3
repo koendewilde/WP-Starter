@@ -148,6 +148,14 @@
 		"plM": 3758088159,
 		"prP": 0
 		},
+	"\/img\/icons\/loader40x40.gif": {
+		"ft": 4194304,
+		"iS": 9070,
+		"oA": 0,
+		"oAP": "\/img\/icons\/loader40x40.gif",
+		"oF": 0,
+		"opt": 0
+		},
 	"\/img\/logo\/logo-icon-512x512.png": {
 		"ft": 32768,
 		"iS": 15265,
@@ -576,32 +584,6 @@
 		"uL": 1
 		},
 	"\/sass\/vendor\/_forms.scss": {
-		"aP": 0,
-		"bl": 0,
-		"dP": 10,
-		"dS": 0,
-		"ft": 4,
-		"ma": 1,
-		"oA": 1,
-		"oAP": "\/sass\/style.css",
-		"oF": 0,
-		"oS": 3,
-		"uL": 1
-		},
-	"\/sass\/vendor\/_live-search-results.scss": {
-		"aP": 0,
-		"bl": 0,
-		"dP": 10,
-		"dS": 0,
-		"ft": 4,
-		"ma": 1,
-		"oA": 1,
-		"oAP": "\/sass\/style.css",
-		"oF": 0,
-		"oS": 3,
-		"uL": 1
-		},
-	"\/sass\/vendor\/_nice-select.scss": {
 		"aP": 0,
 		"bl": 0,
 		"dP": 10,
