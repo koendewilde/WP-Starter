@@ -41,15 +41,34 @@
             "maxlength": ""
         },
         {
-            "key": "field_5a99362188252",
-            "label": "Adres regel 1",
+            "key": "field_5aafc9511354c",
+            "label": "Naam",
             "name": "kdw_footer_right_address1",
             "type": "text",
             "instructions": "",
             "required": 0,
             "conditional_logic": 0,
             "wrapper": {
-                "width": "",
+                "width": "33.33",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_5a99362188252",
+            "label": "Adres",
+            "name": "kdw_footer_right_address2",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "33.33",
                 "class": "",
                 "id": ""
             },
@@ -61,52 +80,14 @@
         },
         {
             "key": "field_5a99363588253",
-            "label": "Adres regel 2",
-            "name": "kdw_footer_right_address2",
+            "label": "Postcode + Plaats",
+            "name": "kdw_footer_right_address3",
             "type": "text",
             "instructions": "",
             "required": 0,
             "conditional_logic": 0,
             "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "default_value": "",
-            "placeholder": "",
-            "prepend": "",
-            "append": "",
-            "maxlength": ""
-        },
-        {
-            "key": "field_5a99363d88254",
-            "label": "Telefoon",
-            "name": "kdw_footer_right_phone",
-            "type": "text",
-            "instructions": "",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "50",
-                "class": "",
-                "id": ""
-            },
-            "default_value": "",
-            "placeholder": "",
-            "prepend": "",
-            "append": "",
-            "maxlength": ""
-        },
-        {
-            "key": "field_5a99366d88256",
-            "label": "Telefoon - link",
-            "name": "kdw_footer_right_phone_link",
-            "type": "text",
-            "instructions": "",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "50",
+                "width": "33.33",
                 "class": "",
                 "id": ""
             },
@@ -125,7 +106,45 @@
             "required": 0,
             "conditional_logic": 0,
             "wrapper": {
-                "width": "",
+                "width": "33.33",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_5a99363d88254",
+            "label": "Telefoon",
+            "name": "kdw_footer_right_phone",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "33.33",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_5a99366d88256",
+            "label": "Telefoon - link",
+            "name": "kdw_footer_right_phone_link",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "33.33",
                 "class": "",
                 "id": ""
             },
@@ -217,5 +236,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1520331963
+    "modified": 1521476384
 }

@@ -37,6 +37,7 @@ A WordPress starter theme.
 
 
 ## To do
+- Update logo on screenshot
 - Clean & Restructure
 - Mobile menu
 - Dropdown menu
