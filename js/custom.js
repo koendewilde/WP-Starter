@@ -5,7 +5,7 @@
 
     'use strict';
 
-    jQuery('#sl-menu ul li.menu-item-has-children').hover(function () {
+    jQuery('ul#main-menu li.menu-item-has-children').hover(function () {
 
         var $parent = jQuery(this);
         var $dropdown = $parent.children('ul');
