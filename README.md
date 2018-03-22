@@ -11,7 +11,7 @@ A WordPress starter theme.
 
 #### Plugins with scss styles
 - Gravity Forms 
-- Cookie
+- Cookie Notice (https://nl.wordpress.org/plugins/cookie-notice/) 
 - Password Protected (has problems on nGinx / Savvii)
 
 
@@ -32,8 +32,8 @@ A WordPress starter theme.
 
 
 ## Classes
-- buttons: .button-outline & .button-solid (also available Main Header Menu)
-- 
+- buttons: .button-outline & .button-solid 
+- button main-menu: .menu-button-outline & .menu-button-solid
 
 
 ## To do
