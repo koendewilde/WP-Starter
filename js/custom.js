@@ -5,6 +5,20 @@
 
     'use strict';
 
+    // mobile button
+    jQuery("#header-nav-button").click(function (e) {
+        e.preventDefault();
+        if (jQuery('html').hasClass('menu-active')) {
+            jQuery("html").removeClass('menu-active');
+        } else {
+            jQuery("html").addClass('menu-active');
+        }
+    });
+
+
+
+
+
     jQuery('ul#main-menu li.menu-item-has-children').hover(function () {
 
         var $parent = jQuery(this);

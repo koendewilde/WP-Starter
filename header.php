@@ -29,16 +29,15 @@
                     </a>
                 </div>
 
+                <div id="header-nav-button"><span></span></div>
+
                 <div id="header-nav">
-
                     <nav>
-
                         <div id="main-menu-wrapper">
                             <ul id="main-menu">
                                 <?php wp_nav_menu( array( 'theme_location' => 'main-menu', 'container' => false, 'items_wrap' => '%3$s' ) ); ?>
                             </ul>
                         </div>
-
                     </nav>
                 </div>
 

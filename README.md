@@ -5,20 +5,20 @@ A WordPress starter theme.
 
 
 #### Plugins MU
-- ACF Pro
+- ACF (Pro)
 - Yoast
 
 
 #### Plugins with scss styles
 - Gravity Forms 
-- Cookie Notice (https://nl.wordpress.org/plugins/cookie-notice/) 
+- Cookie Notice (https://wordpress.org/plugins/cookie-notice/) 
 - Password Protected (has problems on nGinx / Savvii)
 
 
 #### Plugins extra
 - ACF Content Analysis
 - Wordfence
-- Activity Log
+- Activity Log (https://wordpress.org/plugins/aryo-activity-log/)
 - BackUpWordPress
 - Force Regenerate Thumbnails
 

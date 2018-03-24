@@ -6,9 +6,9 @@
     width: 100%;
     z-index: 999;
     background: #fff;
-    padding-top: 32px;
+    padding-top: 0;
     border-bottom: 1px solid #fff;
-    transition: padding-top .3s ease-in-out;
+    transition: padding-top .2s ease-in-out, border-bottom .2s ease-in-out;
 }
 
 .scrolled #header-wrapper {
@@ -23,18 +23,28 @@
 }
 
 main {
-    // 64 + 32
-    padding-top: 96px;
+    //  
+    padding-top: 64px;
     position: relative;
     overflow: hidden;
     width: 100%;
     min-height: 80vh;
 }
 
+@media only screen and (min-width: 640px) {
+    #header-wrapper {
+        padding-top: 32px;
+    }
+    main {
+        // 64 + 32
+        padding-top: 96px;
+    }
+}
+
 // logo
 #header-logo {
     display: inline-block;
-    padding: 16px 0 0;
+    padding: 16px 60px 0 0;
     position: relative;
     z-index: 99;
 }
@@ -48,9 +58,10 @@ main {
     height: 35px;
 }
 
-#header-nav {
-    float: right;
-    padding-top: 12px;
+@media only screen and (min-width: 400px) {
+    #header-logo {
+        padding-right: 0;
+    }
 }
 
 //current menu item
@@ -59,8 +70,19 @@ ul#main-menu li.current-menu-item:not(.menu-button-solid):not(.menu-button-outli
     opacity: 0.8;
 }
 
+// mobile menu
+@media only screen and (max-width: 959px) {
+    #header-nav {
+        display: none;
+    }
+}
+
 // main-menu
-@media only screen and (min-width: 780px) {
+@media only screen and (min-width: 960px) {
+    #header-nav {
+        float: right;
+        padding-top: 12px;
+    }
     ul#main-menu li a {
         padding: 2px;
     }
@@ -201,16 +223,6 @@ ul#main-menu li.current-menu-item:not(.menu-button-solid):not(.menu-button-outli
 }
 
 @media only screen and (min-width: 960px) {
-    /* center menu */
-    #header-nav-wrapper.open,
-    #header-nav-wrapper {
-        float: right;
-        padding-top: 38px;
-    }
-    #header-nav-wrapper>div {
-        text-align: left;
-        display: inline-block;
-    }
     ul#main-menu>li {
         margin: 0 0 0 32px;
         padding-bottom: 6px;
@@ -223,7 +235,7 @@ ul#main-menu li.current-menu-item:not(.menu-button-solid):not(.menu-button-outli
 #header-nav-button {
     position: fixed;
     z-index: 98;
-    top: 7px;
+    top: 12px;
     right: 5%;
     text-align: center;
     cursor: pointer;
@@ -235,7 +247,13 @@ ul#main-menu li.current-menu-item:not(.menu-button-solid):not(.menu-button-outli
     height: 46px;
 }
 
-@media only screen and (min-width: 760px) {
+@media only screen and (min-width: 640px) {
+    #header-nav-button {
+        top: 44px;
+    }
+}
+
+@media only screen and (min-width: 960px) {
     #header-nav-button {
         display: none;
     }
@@ -247,7 +265,7 @@ ul#main-menu li.current-menu-item:not(.menu-button-solid):not(.menu-button-outli
     top: 21px;
     width: 28px;
     height: 2px;
-    background: #fff;
+    background: $color-theme;
     -webkit-transition: 0.3s;
     transition: 0.3s;
     position: absolute;
@@ -258,7 +276,7 @@ ul#main-menu li.current-menu-item:not(.menu-button-solid):not(.menu-button-outli
     display: inline-block;
     width: 28px;
     height: 2px;
-    background: #fff;
+    background: $color-theme;
     -webkit-transition: 0.3s;
     transition: 0.3s;
     position: absolute;
@@ -274,21 +292,21 @@ ul#main-menu li.current-menu-item:not(.menu-button-solid):not(.menu-button-outli
     top: -8px;
 }
 
-#header-nav-button.dl-active>span {
+.menu-active #header-nav-button>span {
     background: transparent;
 }
 
-#header-nav-button.dl-active>span:before,
-#header-nav-button.dl-active>span:after {
+.menu-active #header-nav-button>span:before,
+.menu-active #header-nav-button>span:after {
     top: 0px;
     left: 2px;
-    width: 24px;
+    width: 28px;
 }
 
-#header-nav-button.dl-active>span:before {
+.menu-active #header-nav-button>span:before {
     transform: rotate3d(0, 0, 1, 45deg);
 }
 
-#header-nav-button.dl-active>span:after {
+.menu-active #header-nav-button>span:after {
     transform: rotate3d(0, 0, 1, -45deg);
 }
