@@ -163,7 +163,7 @@
 		"oAP": "\/img\/logo\/min\/logo-icon-512x512.png",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"oT": 1,
 		"q": 100
 		},
@@ -196,6 +196,17 @@
 		"opt": 1,
 		"plM": 3758088159,
 		"prP": 0
+		},
+	"\/img\/logo\/min\/logo-icon-512x512.png": {
+		"ft": 32768,
+		"iS": 8808,
+		"oA": 0,
+		"oAP": "\/img\/logo\/min\/min\/logo-icon-512x512.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
 		},
 	"\/img\/logo\/min\/logo-icon-white.svg": {
 		"ft": 2097152,
