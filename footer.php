@@ -4,7 +4,6 @@
 
         <div id="footer-main-left">
 
-
             <h3>
                 <?php echo esc_attr(get_field('kdw_footer_right_address1','options')); ?>
             </h3>
@@ -33,26 +32,36 @@
 
         </div>
 
-        <div id="footer-main-right">
+        <div id="footer-main-middle">
 
+            <h3>
+                <?php echo esc_attr(get_field('kdw_footer_main_middle_title','options')); ?>
+            </h3>
 
-
+            <ul class="footer-main-menu">
+                <?php wp_nav_menu( array( 'theme_location' => 'footer-main-menu-middle', 'container' => false, 'items_wrap' => '%3$s' ) ); ?>
+            </ul>
 
         </div>
 
+
+        <div id="footer-main-right">
+            <h3>
+                <?php echo esc_attr(get_field('kdw_footer_main_middle_title','options')); ?>
+            </h3>
+
+            <ul class="footer-main-menu">
+                <?php wp_nav_menu( array( 'theme_location' => 'footer-main-menu-right', 'container' => false, 'items_wrap' => '%3$s' ) ); ?>
+            </ul>
+
+
+        </div>
 
     </div>
 
     <div id="footer-bottom" class="wrapper-main clearfix">
 
-        <div id="footer-bottom-left">
-            <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/logo/min/logo-icon-white.svg" alt="<?php echo get_bloginfo('name'); ?>" />
-        </div>
-
         <div id="footer-bottom-right">
-            <ul id="footer-bottom-menu">
-                <?php wp_nav_menu( array( 'theme_location' => 'footer-menu-bottom', 'container' => false, 'items_wrap' => '%3$s' ) ); ?>
-            </ul>
 
             <ul id="footer-social-buttons">
                 <?php
@@ -80,6 +89,14 @@
                 ?>
             </ul>
 
+            <ul id="footer-bottom-menu">
+                <?php wp_nav_menu( array( 'theme_location' => 'footer-menu-bottom', 'container' => false, 'items_wrap' => '%3$s' ) ); ?>
+            </ul>
+
+        </div>
+
+        <div id="footer-bottom-left">
+            <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/logo/min/logo-icon-white.svg" alt="<?php echo get_bloginfo('name'); ?>" />
         </div>
 
     </div>

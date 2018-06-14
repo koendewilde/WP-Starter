@@ -26,6 +26,8 @@
 
         </div>
 
+        <?php kdw_flexible_content_default(); ?>
+
     </section>
 
     <?php endwhile; endif; ?>

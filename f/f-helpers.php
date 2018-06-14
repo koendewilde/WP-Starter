@@ -29,6 +29,41 @@ function kdw_page_intro_buttons($acf1, $acf2){
     
 }
 
+
+//
+// Flexible content
+//
+function kdw_flexible_content_default(){
+    
+        if( have_rows('kdw_page_flexible_content') ){
+            
+            $i = 0;  
+        
+            while ( have_rows('kdw_page_flexible_content') ) : the_row();
+                
+                $i++; 
+        
+                if( get_row_layout() == 'kdw_row_editor' ){
+                   kdw_row_editor($i);
+                } elseif( get_row_layout() == 'kdw_row_img' ){ 
+                    kdw_row_img($i);
+                } elseif( get_row_layout() == 'kdw_row_cta_usp' ){ 
+                    kdw_row_cta_usp($i);
+                } elseif( get_row_layout() == 'xxxkdw_row_img_content' ){ 
+                    kdw_row_img_content($i);
+                } elseif( get_row_layout() == 'xxkdw_row_contact' ){ 
+                    kdw_row_contact($i);
+                } elseif( get_row_layout() == 'xxxkdw_row_usp' ){ 
+                    kdw_row_usp($i);
+                }
+
+            endwhile;
+        }
+
+
+}
+
+
 //
 // ROWS 
 //
@@ -115,6 +150,33 @@ function kdw_row_editor($i){
     echo '</div>';
  
 }
+
+
+
+/* ROW kdw_row_cta_usp */
+function kdw_row_cta_usp($i){
+    
+     echo '<div class="row-cta-usp wrapper-outer row'.$i.' clearfix row-padding">';
+        echo '<div class="wrapper-main">'; 
+    
+    
+    
+    
+                    echo 'yes!';
+    
+    
+    
+        echo '</div>';
+    echo '</div>';
+
+}
+
+
+
+
+
+
+
 
 /* ROW Tiles */
 

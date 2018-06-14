@@ -1,0 +1,47 @@
+{
+    "key": "group_5b19408fba7b1",
+    "title": "Pagina opties",
+    "fields": [
+        {
+            "key": "field_5b1940d6b0b98",
+            "label": "kdw_button_group",
+            "name": "kdw_button_group",
+            "type": "button_group",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "rood": "Rood",
+                "groen": "Groen",
+                "blauw": "Blauw"
+            },
+            "allow_null": 0,
+            "default_value": "",
+            "layout": "horizontal",
+            "return_format": "value"
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_template",
+                "operator": "==",
+                "value": "default"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "acf_after_title",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": 1,
+    "description": "",
+    "modified": 1528384235
+}

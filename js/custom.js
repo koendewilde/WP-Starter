@@ -16,22 +16,23 @@
     });
 
 
-
-
-
     jQuery('ul#main-menu li.menu-item-has-children').hover(function () {
 
-        var $parent = jQuery(this);
-        var $dropdown = $parent.children('ul');
+        if (jQuery("#header-nav-button:visible").length == 0) {
 
-        $dropdown.show(0, function () {
-            $parent.mouseleave(function () {
-                var $this = jQuery(this);
-                $this.children('ul').fadeOut(10);
+            var $parent = jQuery(this);
+            var $dropdown = $parent.children('ul');
+
+            $dropdown.show(0, function () {
+                $parent.mouseleave(function () {
+                    var $this = jQuery(this);
+                    $this.children('ul').fadeOut(10);
+                });
             });
-        });
-    });
 
+        }
+
+    });
 
 
     // .scrolled

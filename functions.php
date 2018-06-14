@@ -16,7 +16,7 @@ if( function_exists('acf_add_options_page') ) {
 		'menu_title'	=> 'Opties',
 		'menu_slug' 	=> 'theme-general-settings',
 		'capability'	=> 'edit_posts',
-		'redirect'		=> false,
+		'redirect'		=> true,
 		'position' 		=> 9
 	));
     

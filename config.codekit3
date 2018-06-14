@@ -7,7 +7,7 @@
 		"uuidString": "529C80D5-680B-4985-8824-6CD533BC3CE5"
 		}
 	],
-"creatorBuild": "26330",
+"creatorBuild": "26680",
 "files": {
 	"\/404.php": {
 		"cB": 0,
@@ -121,6 +121,7 @@
 	"\/img\/ fallback-4x3.jpg": {
 		"ft": 16384,
 		"iS": 72698,
+		"jF": 0,
 		"oA": 0,
 		"oAP": "\/img\/min\/ fallback-4x3.jpg",
 		"oF": 0,
@@ -262,6 +263,7 @@
 	"\/img\/min\/ fallback-4x3.jpg": {
 		"ft": 16384,
 		"iS": 37200,
+		"jF": 0,
 		"oA": 0,
 		"oAP": "\/img\/min\/min\/ fallback-4x3.jpg",
 		"oF": 0,
@@ -690,7 +692,8 @@
 	"creationDate": 541595629,
 	"displayValue": "WP-Starter",
 	"displayValueWasSetByUser": 0,
-	"iconImageName": "meme-krieger"
+	"iconImageName": "meme-krieger",
+	"iconImageWasSetByUser": 0
 	},
 "projectSettings": {
 	"abortBuildOnError": 1,
@@ -2493,6 +2496,7 @@
 		"autoOutputPathReplace1": "",
 		"autoOutputPathReplace2": "",
 		"autoOutputPathStyle": 2,
+		"outputFormat": 0,
 		"quality": 100
 		},
 	"languageDefaultsJS": {
